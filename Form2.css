@@ -1,0 +1,73 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    margin: 5px;
+    font-size: 18px;
+    background-image: url("https://media.istockphoto.com/id/1188046610/vector/background-blue-mesh.jpg?s=612x612&w=0&k=20&c=8ZKpHxtHzhbCFiVvR1iHIxRWJsCY_2y8jk66iTxFdSY=");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+
+}
+
+h1{
+    font-size: 38px;
+}
+.p1{
+    font-size: 28px;
+}
+.p2{
+    font-size: 22px;
+}
+
+.container{
+    background-color: #f2f2f296;
+    margin: 80px 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(211, 211, 211, 0.806);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea{
+    margin: 10px;
+    padding: 8px;
+    width: 90%;
+    background-color: rgba(239, 227, 227, 0.838);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    background-color: rgb(4, 187, 92);
+    margin: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    color: rgb(210, 215, 219);
+    width: 30%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    color:black;
+}
+
+/* @media all and (max-width:699px) and (min-width:520px),(min-width:1151px) {
+    #name {
+        padding: 18px;
+        background: url(https://cdn1.iconfinder.com/data/icons/free-98-icons/32/call-512.png)
+        left center no-repeat;
+        background-size: 16px;
+
+    }
+} */
