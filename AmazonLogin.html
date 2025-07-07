@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign-In</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .amazon-logo {
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .login-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 5px;
+        width: 20vw;
+    }
+
+    h1 {
+        font-size: 29px;
+        font-weight: 400;
+        padding: 5px 0px;
+    }
+
+    .email {
+        font-weight: 600;
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+
+    .in-email {
+        padding: 6px;
+        border: 1px solid rgb(172, 172, 172);
+        border-radius: 5px;
+        margin: 4px 0px;
+        width: 95%;
+    }
+
+    .email-div {
+        padding: 5px 0px;
+    }
+
+    .btn1 {
+        background-color: rgb(254, 220, 45);
+        border: none;
+        width: 99%;
+        padding: 6px;
+        border-radius: 7px;
+        margin: 3px 0px;
+    }
+
+    .btn1:hover {
+        background-color: rgb(242, 201, 0);
+        cursor: pointer;
+    }
+
+    .condition-privacy {
+        font-size: 12.3px;
+        padding: 5px;
+        margin: 14px 0px;
+    }
+
+    .condition-privacy a {
+        color: rgb(1, 101, 182);
+    }
+
+    .need-help {
+        font-size: 13.3px;
+        color: rgb(1, 101, 182);
+        padding: 5px 0px;
+        margin-bottom: 19px;
+        width: 30%;
+    }
+
+    .line {
+        border: 0.1px solid rgb(238, 238, 238);
+        margin: 9px;
+    }
+
+    .need-help a {
+        text-decoration: none;
+        width: 150px;
+        color: rgb(1, 101, 182);
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .condition-privacy a:hover,
+    .need-help:hover,
+    .need-help a:hover,
+    .ama-business a:hover,
+    .div-a a:hover{
+        color: #c66600;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .ama-business {
+        display: flex;
+        padding-top: 9px;
+        flex-direction: column;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .ama-business a {
+        color: rgb(1, 101, 182);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 7px 0px;
+    }
+    fieldset{
+        font-size: 12px;
+        margin-top: 24px;
+        color: #555555;
+        border: none;
+        border-top: 1px solid gainsboro;
+        text-align: center;
+    }
+    fieldset button{
+        border: 1.4px solid rgb(217, 217, 217);
+        background-color: #fff;
+        padding: 5px;
+        width: 99%;
+        margin-top: 9px;
+        box-shadow: 2px 2.5px 5px rgb(211, 211, 211);
+        border-radius: 6px;
+    }
+    fieldset button:hover{
+        cursor: pointer;
+        background-color: #f8f8f8;
+    }
+    .div-line{
+        border: 0.4px solid rgb(229, 229, 229);
+        width: 70%;
+        margin-top: 30px;
+    }
+    .footer{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .div-a a{
+        font-size: 12px;
+        color: rgb(1, 101, 182);
+        margin: 10px;
+        text-decoration: none;
+    }
+    .address{
+        font-size: 12px;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+</style>
+
+<body>
+    <div class="login-page">
+        <div>
+            <nav>
+                <img class="amazon-logo" src="./Images/Amazon-logo.png" alt="amazon-logo">
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="main">
+                <h1>Sign in</h1>
+
+
+                <div class="email-div">
+                    <label class="email" for="email">Email or mobile phone number
+                        <input class="in-email" type="email" required>
+                    </label>
+                </div>
+
+                <div class="btn">
+                    <button class="btn1">Continue</button>
+                </div>
+
+                <div class="condition-privacy">
+                    By continuing, you agree to Amazon's
+                    <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a>.
+                </div>
+
+                <div class="need-help">
+                    <details>
+                        <summary>Need help?</summary>
+                        <a href="">Forgot your password?</a>
+                        <a href="">Other issues with Sign-In</a>
+                    </details>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="ama-business">
+                    Buying for work?
+                    <a href="">Shop on Amazon Business</a>
+                </div>
+
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>New to Amazon?</legend>
+                    <button>Create your Amazon account</button>
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="div-line"></div>
+
+        <div class="footer">
+
+            <div class="div-a">
+                <a href="">Conditions of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Help</a>
+            </div>
+            <div class="address">
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
